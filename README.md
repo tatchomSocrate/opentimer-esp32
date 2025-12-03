@@ -1,4 +1,4 @@
-# Bluetooth Controller Alarm Built with an ESP32 or an Arduino Microcontroller
+# Bluetooth alarm controller built with an ESP32 or an Arduino microcontroller
 
 ## This project is the ESP32 version
 
