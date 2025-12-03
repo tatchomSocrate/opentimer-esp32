@@ -2,8 +2,8 @@
 
 ## This project is the ESP32 version
 
-You can use this prototype circuit to build a custom alarm system secured with a password and controlled via an Android application. This implementation supports two types of alarms (PRGI and PRGII).  
-PRGI alarms are triggered at a specific time for a defined duration, whereas PRGII alarms are triggered to set an ON/OFF state. Therefore, PRGI can be used, for example, as a morning bell, and PRGII can serve as a timer switch.
+You can use this prototype circuit to build a custom alarm system secured with a password and controlled via an Android application(OpenTimer). This implementation supports two types of alarms (PRGI and PRGII).  
+PRGI alarms are triggered at a specific time for a defined duration, whereas PRGII alarms are triggered to set an ON/OFF state. Therefore, PRGI can be used, for example, as a school bell timer, an alarm clock, a scheduled reminder, or a timed alert. PRGII can serve as a timer switch, a lighting control trigger, or an automatic equipment start/stop control.
 
 ## Features
 * 40 alarms  
