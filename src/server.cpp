@@ -17,8 +17,8 @@
   size--;
 
 #define SERIAL_READ_BYTE_S(x) \
-  if (size == 0) \
-    goto end; \
+  if (size == 0) goto end; \
+  if (SerialBT.available() == 0) goto end; \
   SERIAL_READ_BYTE(x)
 
 #define SERIAL_READ_SIZE(x) \
@@ -322,7 +322,11 @@ void execRequest() {
                 if (isPasswordCorrect) preferences.begin(DB_NAME, false);
                 break;
             default:
-                goto bad;
+                lcd.home(); lcd.clear();
+                tone(BUZZER, BUZZER_FREQ, MSG_DELAY);
+                lcd.print(tempByte);
+                delay(MSG_DELAY);
+                if (currentMenu == HOME) initHome(); else displayAlarm();
         } // switch
     } // while
 
