@@ -321,21 +321,6 @@ void execRequest() {
                 
                 if (isPasswordCorrect) preferences.begin(DB_NAME, false);
                 break;
-            case DISCONNECTED:
-                lcd.home();
-                lcd.clear();
-                tone(BUZZER, BUZZER_FREQ, 200);
-                lcd.print("  DISCONNECTED  ");
-                delay(300);
-                tone(BUZZER, BUZZER_FREQ, 200);
-                delay(MSG_DELAY);
-
-                if (currentMenu == HOME) {
-                    initHome();
-                } else {
-                    displayAlarm();
-                }
-      break;
             default:
                 goto bad;
         } // switch
