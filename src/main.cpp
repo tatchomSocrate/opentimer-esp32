@@ -142,7 +142,7 @@ void setup() {
     }
 
     // Start Bluetooth
-    SerialBT.begin("Inch Bluetooth");
+    SerialBT.begin("OpenTimer Bluetooth");
 }
 
 // ============================================================================
